@@ -1,0 +1,637 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+button:hover,a:hover
+{
+    transition: 0.5s;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    color:#4a4c4e;
+    letter-spacing: 0.5px;
+}
+img
+{
+    width: 100%;
+}
+a
+{
+    text-decoration: none;
+}
+.top
+{
+    font-size: 12px;
+    font-weight: bold;
+    position: sticky;
+    top:0;
+    z-index: 999;
+}
+.top ul
+{
+    list-style-type: none;
+}
+.top a
+{
+    color: #ffffff;
+}
+.top1
+{
+    background-color: #202226;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.top1 ul
+{
+    display: flex;
+    margin-right: 20px;
+}
+.top1 ul li
+{
+    padding: 5px 24px;
+    padding-right: 0;
+}
+.social
+{
+    font-size: 16px;
+}
+.top a:hover
+{
+    color:#ff4229;
+}
+.top2
+{
+    background-color: rgba(255, 255,255, 0.9);
+    display: flex;
+    align-items: center;
+}
+.top2 a
+{
+    color:#5B6266;
+}
+.nav>ul>li li>a
+{
+    color: white;
+}
+.top2 .nav>ul
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.top2 .nav>ul>li
+{
+    padding: 30px 20px;
+}
+.nav>ul ul
+{
+    display: none;
+}
+.bar-ul
+{
+    height: 2px;
+    width: 15px;
+    margin-left: 18px;
+    background-color: #5B6266;
+}
+.nav>ul>li ul
+{
+    background-color: #000000;
+    color: #fff;
+}
+.nav>ul>li ul>li
+{
+    padding:20px 18px 15px 18px;
+}
+.nav>ul>li:hover>ul
+{
+    display: block;
+    position: absolute;
+    margin-top:15px;
+    margin-right: 20px;
+    margin-left: -20px;
+    animation-name: hieu_ung_menu,opacity;
+    animation-duration: 1s;
+}
+.nav>ul>li li
+{
+	position:relative;
+}
+.nav>ul>li li:hover>ul
+{
+    display:block;
+    width: 100%;
+	position:absolute;
+	top:0;
+    left:100%;
+    animation-name: hieu_ung_menu,opacity;
+    animation-duration: 1s;
+}
+@keyframes hieu_ung_menu
+{
+    from
+    {
+        max-height: 0vh;
+    }
+    to
+    {
+        max-height: 100vh;
+    }
+}
+@keyframes opacity
+{
+    from 
+    {
+        opacity: 0;
+    } 
+    to 
+    {
+        opacity: 1;
+    }
+}
+.logo
+{
+    width: 10%;
+    padding: 10px 40px 0 20px;
+}
+.nav
+{
+    width: 90%;
+}
+.sildeshow
+{
+    padding: 0 20px;
+}
+#back-top a
+{
+    position: fixed;
+    bottom: 12px;
+    right: 24px;
+    color: #eee;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 9999;
+}
+#back-top a:hover {
+    color: rgba(50,50,50,0.8);
+}
+.slick-dots 
+{
+    bottom:30px;
+}
+
+.slick-dots li button:before
+{
+    font-size: 16px;
+    color:#E5E5E5;
+}
+.slick-dots li.slick-active button:before 
+{
+    color: #ffffff;
+}
+.fa-chevron-left:before,.fa-chevron-right:before
+{
+    font-size: 50px;
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    transform: translate(0%,-50%);
+    color: rgb(255, 255, 255); 
+}
+.fa-chevron-left:before
+{
+    left: 5%;
+    transform: translate(-50%,0);
+}
+.fa-chevron-right:before
+{
+    right: 5%;
+    transform: translate(+50%,0);
+}
+.sildeshow i:hover
+{
+    cursor: pointer;
+}
+.sv-row
+{
+    display: flex;
+    margin: 30px 0;
+}
+.sv-col
+{
+    text-align: center;
+    padding: 50px;
+}
+.sv-col h2
+{
+    margin: 25px 0;
+    letter-spacing: 1.2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sv-col p
+{
+    margin:30px 0;
+}
+.sv-col i
+{
+    font-size: 40px;
+    color:#e0e0e2;
+}
+.service a
+{
+    color: #000000;
+    border: 2px solid #303033;
+    padding: 10px;
+}
+.service a:hover
+{
+    background-color: #303033;
+    color: #ffffff;
+}
+.service span
+{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.welcome
+{
+    background-color: #F5F5F5;
+}
+.welcome .container
+{
+    width: 80%;
+    margin:0 auto;
+    padding-bottom: 20px;
+}
+.welcome .container
+{
+    display: flex;
+}
+.welcome .container>div
+{
+    width: 50%;
+    background-color: #ffffff;
+}
+.welcome .img-box
+{
+    height: 90vh;
+    background-image: url(../img/menu/risotto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.welcome-box
+{
+    text-align: center;
+    padding: 50px;
+}
+.welcome-box h2
+{
+    font-size: 36px;
+    margin: 20px 0;
+    letter-spacing: 4px;
+}
+.welcome-box .line
+{
+    height: 3px;
+    width: 42px;
+    background-color: #303033;
+    margin:15px auto;
+}
+.welcome-box h3
+{
+    color:#aaa;
+    font-size: 14px;
+    font-weight: 400;
+    margin:40px 0;
+}
+.welcome-box p
+{
+    margin: 25px 0;
+    line-height: 30px;
+}
+.welcome-box a
+{
+    background-color: #303033;
+    color: #ffffff;
+    padding: 10px;
+}
+.welcome-box a:hover
+{
+    background-color: #A8A8A8;
+}
+.menu 
+{
+    width: 90%;
+    margin:0 auto;
+}
+
+.intro
+{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+h1
+{
+    color:#1a1c1e;  
+    font-size:64px; 
+    text-align: center;
+}
+.description
+{
+    color: #aaaaaa;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    margin:42px auto 0 auto;
+    padding: 0 24px;
+    max-width: 610px;
+}
+.button-box
+{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.button-menu button
+{
+    width: 30%;
+    border: 2px solid #F4F4F4;
+    background-color: #ffffff;
+    color: #aaaaaa;
+    padding: 8px 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    margin:10px 3px 0 3px;
+}
+.button-menu button:hover
+{
+    border: 2px solid #666;
+}
+.button-menu button.tab-active
+{
+    color: #ff4229;
+    border: 2px solid #000000;
+
+}
+button
+{
+    border: none;
+    outline: none;
+}
+#starters,#brunch,.drink-container
+{
+    display: flex;
+}
+#all-day,#starters,#brunch,.drink-container
+{
+    padding: 80px;
+}
+.menu-food .container
+{
+    padding-bottom: 145px;
+}
+.menu-food h2,.drink h2
+{
+    border-bottom: 4px solid #000000;
+    margin: 24px 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 32px;
+    line-height: 40px;
+    color:#303033;
+    font-weight: 600;
+}
+.feature-food
+{
+    width:33.33%;
+    padding:  25px;
+    border: 6px solid #eee;
+    margin-right: 30px;
+}
+.food-item h6,.feature2 h6
+{
+    text-transform: uppercase;
+    letter-spacing: 0.6;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #303033;
+    margin: 10px 0;
+    padding-right: 20px;
+}
+.food-item .item
+{
+    margin-top: 30px;
+    color: #303033;
+    position: relative;
+}
+sup
+{
+    color: #4a4c4e;
+}
+.food-item p,.feature2 p
+{
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    padding-right: 50px;
+}
+.f-right 
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+.other 
+{
+    width: calc(100% - 33.33%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.o1 
+{
+    width: 100%;
+    padding: 25px;
+}
+.o2 
+{
+    width :50%;
+    padding: 25px;
+}
+.feature2
+{
+    background-color: #2A2C2E;
+    padding: 30px;
+    color: #ccc;
+    text-align: center;
+}
+.feature2 h2,.drink .food-item h2
+{
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff !important;
+    color: #ffffff !important;
+    text-align: center;
+}
+
+.o-des
+{
+    color: #bbb;
+    font-size: 14px;
+    font-style: italic;
+    margin: 10px 0 25px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.o-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.o1 .food-item>div
+{
+    width: 45%;
+}
+.food-item span
+{
+    border: 2px solid red;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 8px;
+}
+ #all-day .o-flex
+{
+     flex-wrap: nowrap; 
+}
+#all-day .other
+{
+    width: 100%;
+} 
+.food-item .img-item
+{
+    width: 120px;
+    margin-right: 25px;
+}
+#all-day .food-item .item
+{
+    margin: 0;
+    width: 70%;
+}
+#all-day h6
+{
+    margin-top: 10px;
+}
+.food-item img
+{
+    width: 100%;
+}
+.tabcontent
+{
+    display: none;
+    animation: opacity 1s;
+}
+.other-allday
+{
+    display: flex;
+    width: 100%;
+}
+.other-allday .food-item .item
+{
+    margin-top: 30px !important;
+    width: 100% !important;
+}
+.chefs-bg
+{
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/menu/kitchen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    position: relative;
+}
+.chefs-bg .container
+{
+    width: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.chefs-bg .container>h2
+{
+    font-size: 64px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2em;
+    padding: 50px 0;
+}
+.chefs-bg h2
+{
+    border: none !important;
+}
+.chefs-bg h6
+{
+    margin-top: 30px;
+    color: #eee;
+}
+ .dot
+{
+    color: #303033;
+    border-top: 4px dotted #303033 !important;
+    border-bottom: 4px dotted #303033 !important;
+} 
+.drink .other .o1
+{
+    background-color: #2A2C2E;
+}
+.drink .other .o1 h2,.drink .other .o1 h6
+{
+    color: #ffffff;
+}
+.drink .other .o1 h2
+{
+    border-bottom: 4px solid #ffffff !important;
+}
+.drink .other .o1 p,.drink .other .o1 .f-right
+{
+    color: #ccc;
+}
+.drink .img-box
+{
+    height: 30vh;
+    background: url(../img/menu/matcha_s3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.item-caution
+{
+    width: 100% !important;
+    font-style: italic;
+}
+#blog
+{
+    background-color: #f5f5f5;
+}
