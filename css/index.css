@@ -18,9 +18,15 @@ body
     color:#4a4c4e;
     letter-spacing: 0.5px;
 }
+h1,h2,h3,h4,h5,h6
+{
+    letter-spacing: 1.2px;
+}
 img
 {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
 }
 a
 {
@@ -64,7 +70,7 @@ a
 {
     font-size: 16px;
 }
-.top a:hover
+.top a:hover,.post-day a:hover,.blog-info h2:hover>a
 {
     color:#ff4229;
 }
@@ -233,7 +239,6 @@ a
 .sv-col h2
 {
     margin: 25px 0;
-    letter-spacing: 1.2px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -252,7 +257,7 @@ a
     border: 2px solid #303033;
     padding: 10px;
 }
-.service a:hover
+.service a:hover,.blog-info>a:hover>span,.evt-info>a:hover>span
 {
     background-color: #303033;
     color: #ffffff;
@@ -349,6 +354,7 @@ h1
     color:#1a1c1e;  
     font-size:64px; 
     text-align: center;
+    text-transform: uppercase;
 }
 .description
 {
@@ -395,7 +401,7 @@ button
     border: none;
     outline: none;
 }
-#starters,#brunch,.drink-container
+#starters,#brunch,.drink-container,.evt-container,.team-container,.contact-container
 {
     display: flex;
 }
@@ -491,7 +497,6 @@ sup
     color: #ffffff !important;
     text-align: center;
 }
-
 .o-des
 {
     color: #bbb;
@@ -631,7 +636,371 @@ sup
     width: 100% !important;
     font-style: italic;
 }
-#blog
+#blog,#events,#hours
 {
     background-color: #f5f5f5;
+}
+.blog-container,.gallery-container,.evt-container,.team-container,.contact-container
+{
+    display: flex;
+    padding:  0 100px 50px 100px;
+    justify-content: space-between;
+}
+.blog-container .blog-item
+{
+    width: 31%;
+    background-color: #ffffff;
+}
+.blog-item .img-box 
+{
+    height: auto;
+}
+.blog-item .img-box img
+{
+    vertical-align: text-top;
+}
+.blog-info
+{
+    padding: 20px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.blog-item h2 a,.blog-info>a,.evt-info>a
+{
+    color: #1a1c1e;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.blog-item p
+{
+    font-size: 14px;
+    margin: 30px 0;
+}
+.blog-info>a
+{
+ position: absolute;
+ right: 20px;
+ bottom: 20px;
+}
+.blog-item span,.evt-col span,.evt-row span
+{
+    border: 2px solid #303033;
+    color: #303030;
+    display: inline-block;
+    padding:13px 10px ;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 14px;
+}
+.blog-item i,.evt-col i,.evt-row i
+{
+    color: red;
+    font-size: 15px;
+}
+.post-day 
+{
+ position: absolute;
+ left: 20px;
+ bottom: 15px;
+ text-transform: uppercase;
+ font-size: 14px;
+ font-weight: bold;
+}
+.post-day a
+{
+    color: #cacacc;
+}
+ .s-button
+{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom:100px;
+    
+}
+ .s-button a
+{
+    background-color: #cccccc;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.s-button a:hover,#gallery .s-button a:hover
+{
+    background-color: rgb(170, 170, 170);
+}
+.gallery-item,.team-item
+{
+    width: 25%;
+    margin: 1%;
+}
+#gallery .s-button a
+{
+    background-color: #272727;
+}
+.evt-container,.team-container
+{
+    padding-bottom: 100px;
+}
+.evt-itm 
+{
+    background-color: #ffffff;
+    text-align: center;
+}
+.evt-col
+{
+    width: 31%;
+}
+.evt-content
+{
+    margin-bottom: 20px;
+}
+.evt-row
+{
+    width: 100%;
+    padding: 25px;
+}
+.evt-itm h2
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.date
+{
+    display: flex;
+    justify-content: center;
+}
+.date-left
+{
+    font-size: 42px;
+    line-height: 42px;
+    padding-right: 2px;
+    margin-left: 0;
+    font-weight: 800;
+}
+.date-top  
+{
+    padding-top: 8px;
+    font-size: 16px;
+    line-height: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.date-bottom,.date-top
+{
+    text-align: left;
+}
+.evt-line
+{
+    height: 3px;
+    width: 24px;
+    margin: 16px auto 25px;
+    background-color: #4a4c4e;
+}
+.evt-time
+{
+    font-size: 18px;
+    font-weight: 800;
+    color: #cacacc;
+    margin-top: 20px;
+}
+.team-img
+{
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin:0 auto;
+}
+.team-name,.team-job,.team-m-info,.team-email
+{
+    text-transform: uppercase;
+    text-align: center
+}
+.team-name
+{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 24px 0 0 0;
+    text-align: center;
+}
+.team-container a
+{
+    color: #303030;
+}
+.team-name a:hover
+{
+    color: #aaa;
+}
+.team-job,.team-email,.team-m-info
+{
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 2em;
+}
+.team-info 
+{
+    margin-top: 20px;
+}
+.team-email,.team-m-info
+{
+    margin-top: 6px;
+}
+.hours-item
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.hours-left,.hours-right
+{
+    text-transform: uppercase;
+    width: 50%;
+}
+.hours-left
+{
+    text-align: right;
+}
+.hours-right
+{
+    line-height: 48px;
+    padding: 1px 6px 1px 12px;
+    font-size: 26px;
+    color: #1a1c1e;
+}
+.hours-d
+{
+    display: inline;
+    background-color: #1A1C1E;
+    color: #eeeeed;
+    padding: 0 5px;
+    font-size: 45px;
+    line-height: 52px;
+}
+.hours-container,.contact-container
+{
+    padding-bottom: 50px;
+}
+.contact-item
+{
+    background-color: #202224;
+    color: #aaa;
+    width: 31%;
+    margin:1%;
+    padding: 30px;
+    font-size:15px;
+    line-height: 30px;
+    position: relative;
+}
+.contact-item .contact-button
+{
+    margin: 40px 0;
+    position: absolute;
+    top:150px;
+}
+.contact-item .contact-button
+{
+    background-color: transparent !important;
+    color: #aaa;
+}
+.contact-item .contact-button span
+{
+    border: 2px solid #ffffff;
+    padding: 10px 15px;
+    text-align: left;
+}
+.contact-item p:nth-child(1)
+{
+ padding-bottom: 75px;
+}
+.here span
+{
+    border-bottom: 1px solid #ccc;
+    color: #ff4229;
+}
+.contact-item .contact-button span:hover
+{
+    background-color: #ffffff;
+    color: #303033;
+}
+.here span:hover
+{
+    color: #aaa;
+}
+ .contact-item:nth-child(2)
+{
+    height: auto;
+    background: url("../img/contact/bread.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+input[type="text"],input[type="email"] ,textarea
+{
+    width: 100%;
+    font-size: 15px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 14px 0;
+    border-bottom:  1px dashed #444;
+    color: #fff;
+    text-transform: uppercase;
+}
+textarea
+{
+    margin: 20px 0;
+}
+input:focus,textarea:focus
+{
+    outline: none;
+}
+input[type="submit"]
+{
+    border: 2px solid #fff;
+    padding: 12px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+#footer
+{
+    color: #bbb;
+    padding: 72px 48px 48px;
+    overflow: hidden;
+    clear: none;
+    position: relative;
+    margin-top: 17px;
+    text-align: center;
+}
+.ft-social ul
+{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.ft-social li
+{
+    width: 5%;
+    list-style: none;
+    font-size: 30px;
+}
+.ft-social li>a
+{
+    color: #ccc;
+}
+.ft-social li>a:hover
+{
+    color: #ff4229;
+}
+.ft-copy
+{
+    font-size: 13px;
 }
