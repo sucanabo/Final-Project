@@ -1,0 +1,239 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+button:hover,a:hover
+{
+    transition: 0.5s;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    color:#4a4c4e;
+    letter-spacing: 0.5px;
+}
+h1,h2,h3,h4,h5,h6
+{
+    letter-spacing: 1.2px;
+}
+.page-title
+{
+    font-size: 38px;
+    line-height: 44px;
+    padding-top: 0;
+    margin-bottom: 24px;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+a
+{
+    text-decoration: none;
+}
+input:focus,textarea:focus,button[type="reset"]
+{
+    outline: none;
+}
+.fa-phone
+{
+    transform: scaleX(-1);
+}
+.top
+{
+    font-size: 12px;
+    font-weight: bold;
+    position: sticky;
+    top:0;
+    z-index: 999;
+}
+.top ul
+{
+    list-style-type: none;
+}
+.top a
+{
+    color: #ffffff;
+}
+.top1
+{
+    background-color: #202226;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.top1 ul
+{
+    display: flex;
+    margin-right: 20px;
+}
+.top1 ul li
+{
+    padding: 5px 24px;
+    padding-right: 0;
+}
+.social
+{
+    font-size: 16px;
+}
+.top a:hover,.post-day a:hover,.blog-info h2:hover>a
+{
+    color:#ff4229;
+}
+.top2
+{
+    background-color: rgba(255, 255,255, 0.9);
+    display: flex;
+    align-items: center;
+}
+.top2 a
+{
+    color:#5B6266;
+}
+.nav>ul>li li>a
+{
+    color: white;
+}
+.top2 .nav>ul
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.top2 .nav>ul>li
+{
+    padding: 30px 20px;
+}
+.nav>ul ul
+{
+    display: none;
+}
+.bar-ul
+{
+    height: 2px;
+    width: 15px;
+    margin-left: 18px;
+    background-color: #5B6266;
+}
+.nav>ul>li ul
+{
+    background-color: #000000;
+    color: #fff;
+}
+.nav>ul>li ul>li
+{
+    padding:20px 18px 15px 18px;
+}
+.nav>ul>li:hover>ul
+{
+    display: block;
+    position: absolute;
+    margin-top:15px;
+    margin-right: 20px;
+    margin-left: -20px;
+    animation-name: hieu_ung_menu,opacity;
+    animation-duration: 1s;
+}
+.nav>ul>li li
+{
+	position:relative;
+}
+.nav>ul>li li:hover>ul
+{
+    display:block;
+    width: 100%;
+	position:absolute;
+	top:0;
+    left:100%;
+    animation-name: hieu_ung_menu,opacity;
+    animation-duration: 1s;
+}
+@keyframes hieu_ung_menu
+{
+    from
+    {
+        max-height: 0vh;
+    }
+    to
+    {
+        max-height: 100vh;
+    }
+}
+@keyframes opacity
+{
+    from 
+    {
+        opacity: 0;
+    } 
+    to 
+    {
+        opacity: 1;
+    }
+}
+.logo
+{
+    width: 10%;
+    padding: 10px 40px 0 20px;
+}
+.nav
+{
+    width: 90%;
+}
+#back-top a
+{
+    position: fixed;
+    bottom: 12px;
+    right: 24px;
+    color: #eee;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 9999;
+}
+#back-top a:hover {
+    color: rgba(50,50,50,0.8);
+}
+#footer
+{
+    color: #bbb;
+    padding: 72px 48px 48px;
+    overflow: hidden;
+    clear: none;
+    position: relative;
+    margin-top: 17px;
+    text-align: center;
+}
+.ft-social ul
+{
+    display:flex;
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.ft-social li
+{
+    max-width: 5%;
+    list-style: none;
+    font-size: 30px;
+    margin:1%;
+}
+.ft-social li>a
+{
+    color: #ccc;
+}
+.ft-social li>a:hover
+{
+    color: #ff4229;
+}
+.ft-copy
+{
+    font-size: 13px;
+}

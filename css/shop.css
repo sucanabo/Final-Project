@@ -1,0 +1,143 @@
+li
+{
+    list-style: none;
+}
+a
+{
+color: #6a6c6e;
+}
+input,li,h3
+{
+    text-transform: uppercase;
+}
+form
+{
+    position: relative;
+    margin-bottom: 70px;
+}
+main
+{
+    display: flex;
+    background-color: #F4F4F4;
+    padding: 25px;
+}
+.left,.right
+{
+    background-color: #ffff;
+    margin: 25px;
+    padding: 50px;
+}
+.left
+{
+    width: 30%;
+}
+.right 
+{
+    width:70%;
+}
+input[type="text"]
+{
+    border:1px solid #c8bfc6;
+    padding:10px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+}
+.delete-text
+{
+    position: absolute;
+    right: 130px;
+    top: 10px;
+    font-weight: bold;
+    color: #ff4229;
+    border: none;
+    background: transparent;
+}
+form::before
+{
+    content: '\f002';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.m-ul
+{
+    margin-bottom: 70px;
+}
+li ul>li
+{
+    padding-left: 30px;
+    font-size: 10px;
+    line-height: 20px;
+}.m-ul>li
+{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+.m-ul>li:hover>a,li ul>li:hover a,.rate-item h6:hover a
+{
+    color: #ff4229;
+}
+h3
+{
+color: #505234;
+font-size: 15px;
+line-height: 24px;
+font-weight: bolder;
+letter-spacing: 1.2px;
+margin: 20px 0;
+}
+.rate-item
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+h6
+{
+    color: #6a6c6e;
+    font-size: 13px;
+    font-weight: 700;
+    width: 80%;
+}
+.rate-info
+{
+    width:80%;
+}
+.rate-img
+{
+    width:20%;
+}
+.shop-row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.shop-item
+{
+    width: 22%;
+    text-align: center;
+}
+.results
+{
+    color: #aaa;
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.right h3
+{
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: "Open Sans";
+}
