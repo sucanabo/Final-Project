@@ -14,6 +14,7 @@ form
 {
     position: relative;
     margin-bottom: 70px;
+    overflow: hidden;
 }
 main
 {
@@ -37,18 +38,21 @@ main
 }
 input[type="text"]
 {
+    width:100%;
     border:1px solid #c8bfc6;
     padding:10px;
     padding-left: 30px;
     font-size: 12px;
     font-weight: bold;
     color: #888;
+    padding-right: 20px;
 }
 .delete-text
 {
     position: absolute;
-    right: 130px;
-    top: 10px;
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     font-weight: bold;
     color: #ff4229;
     border: none;
@@ -63,7 +67,7 @@ form::before
     top:10px;
     left: 10px;
 }
-.m-ul
+#m-ul
 {
     margin-bottom: 70px;
 }
@@ -72,14 +76,14 @@ li ul>li
     padding-left: 30px;
     font-size: 10px;
     line-height: 20px;
-}.m-ul>li
+}#m-ul>li
 {
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 40px;
 }
-.m-ul>li:hover>a,li ul>li:hover a,.rate-item h6:hover a
+#m-ul>li:hover>a,li ul>li:hover a,.rate-item h6:hover a
 {
     color: #ff4229;
 }
@@ -141,3 +145,25 @@ h6
     font-weight: 300;
     font-family: "Open Sans";
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: #272727;
+    color: white;
+    border: 1px solid #272727;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}

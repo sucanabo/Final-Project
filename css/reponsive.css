@@ -1,9 +1,4 @@
-.toggle-menu
-    {
-        font-size: 30px;
-        text-align: center;
-        display: none;
-    }
+
 @media screen and (max-width:1248px)
 {
     .team-container
@@ -19,18 +14,24 @@
 @media screen and (max-width:960px)
 {
 
-    img
+    .nav
+    {
+        display: none;
+    }
+    .toggle-menu
+    {
+        display: block;
+    }
+    section img
     {
         display: block;
         margin: 0 auto;
     }
-    .top1
+    .top1,main
     {
         flex-direction: column-reverse;
     }
-    .toggle-item ul,.top1,.sv-row,.welcome .container,#starters,
-    .other,.other-allday,.o-flex,.blog-container,.gallery-container,
-    .evt-container,.contact-container
+   .shop-row,main,.top1,.sv-row,.welcome .container,#starters,.other,.other-allday,.o-flex,.blog-container,.gallery-container,.evt-container,.contact-container
     {
         flex-wrap: wrap;
     }
@@ -41,14 +42,13 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    .nav-reponsive
+    {
+        display: block !important;
+    }
     .toggle-menu
     {
         display: block;
-    }
-    .toggle-item li
-    {
-        background-color: #121416;
-        width: 100%;
     }
      .md-6
     {
@@ -82,6 +82,10 @@
 }
 @media screen and (max-width:770px)
 {
+    .fsm-6
+    {
+        width: 46.5% !important;
+    }
     .sm-12
     {
         width: 100% !important;
@@ -97,6 +101,6 @@
     }
     .img-box
     {
-    height: 80vh !important;
+    height: 50vh !important;
     }
 }

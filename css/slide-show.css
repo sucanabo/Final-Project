@@ -1,19 +1,31 @@
 
+    .slide
+    {
+        overflow: hidden;
+    }
     .sildeshow
     {
         position: relative;
         overflow: hidden;
     }
-     .time-bar
+     #time-bar
     {
         background-color: rgb(255, 255, 255,0.3);
         width: 100%;
+        max-width:100%; 
         height: 10px;
         position: absolute;
         top: 0;
-        animation: time-run 10s ease-in-out infinite;
         z-index: 998;
     } 
+    .time-run
+    {
+        animation: time-run 10s;
+    }
+    .time-back
+    {
+        animation: time-back 0s;
+    }
     .pre,.next
     {
         position: absolute;
@@ -84,6 +96,11 @@
     }
      @keyframes time-run
     {
-        0%{width: 0};
+        0%{width: 0%};
         100%{width: 100%}
     } 
+    @keyframes tine-back
+    {
+        0%{width:100%}
+        100%{width:0%}
+    }

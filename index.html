@@ -46,11 +46,12 @@
         </div>
         <div class="top2">
             <div class="logo">
-                <a href="#"><img src="img/spoon.png" alt="logo"></a>
+                <a href="index.html"><img src="img/spoon.png" alt="logo"></a>
             </div>
-            <div class="nav">
-                <!-- <div class="toggle-menu"><i class="fas fa-bars"></i></div> -->
-                <!-- <div class="toggle-item"> -->
+            <div class="toggle-menu">
+                <span onclick="shownav()"><i class="fas fa-bars"></i></span>
+            </div>
+            <div id="togglenav" class="nav2">
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#menu">MENU</a></li>
@@ -59,6 +60,75 @@
                     <li><a href="#team">TEAM</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="#">|</a></li>
+                    <li id="m-item" class="m-item">
+                        <a href="#">PAGE</a><span><i class="fas fa-chevron-down"></i></span>
+                        <ul>
+                            <li>
+                                <a href="#">MENU</a><span><i class="fas fa-chevron-down"></i></span>
+                                <ul>
+                                    <li><a href="#">MENU (MIXED LAYOUT)</a></li>
+
+                                    <li><a href="#">MENU WITH TABS</a></li>
+
+                                    <li><a href="#">MENU WITH SMALL SQAURE IMAGES</a></li>
+
+                                    <li><a href="#">MENU WITH LARGE SQAURE IMAGES</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">CONTENT BOXES</a></li>
+
+                            <li>
+                                <a href="#">BLOG</a><span><i class="fas fa-chevron-down"></i></span>
+                                <ul>
+                                    <li><a href="#">BLOG MASONRY </a></li>
+
+                                    <li><a href="#">BLOG 1 COLUMN WITH SIDEBAR</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">GALLERY</a></li>
+
+                            <li><a href="#">EVENTS</a></li>
+
+                            <li><a href="#">THE SPOON TEAM</a></li>
+
+                            <li><a href="#">CONTACT</a></li>
+
+                            <li>
+                                <a href="#">PAGE EXAMPLES</a><span><i class="fas fa-chevron-down"></i></span>
+                                <ul>
+                                    <li><a href="#">PAGE WITHOUT SIDEBAR</a></li>
+
+                                    <li><a href="#">PAGE NO SIDEBAR + FEATURE IMAGES</a></li>
+
+                                    <li><a href="#">FULLWIDE PAGE</a></li>
+
+                                    <li><a href="#">FULLWIDE PAGE + FEATURE IMAGES</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">THEME FEATURES</a><span><i class="fas fa-chevron-down"></i></span>
+                        <ul>
+                            <li><a href="#">SHORTCODES</a></li>
+
+                            <li><a href="#">TYPOGRAPHY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/shop.html">SHOP</a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a  id="t-home"href="#">HOME</a></li>
+                    <li><a  id="t-menu"href="#menu">MENU</a></li>
+                    <li><a  id="t-blog"href="#blog">BLOG</a></li>
+                    <li><a  id="t-events"href="#events">EVENTS</a></li>
+                    <li><a  id="t-team"href="#team">TEAM</a></li>
+                    <li><a  id="t-contact"href="#contact">CONTACT</a></li>
+                    <li><a  href="#">|</a></li>
                     <li>
                         <a href="#">PAGE +</a>
                         <ul>
@@ -118,7 +188,7 @@
                     </li>
                     <li><a href="pages/shop.html">SHOP</a></li>
                 </ul>
-            <!-- </div> -->
+                <!-- </div> -->
             </div>
         </div>
     </header>
@@ -127,12 +197,12 @@
             <a href="#top"><i class="fas fa-arrow-up"></i></a>
         </div>
         <div class="sildeshow">
-            <div class="time-bar"></div>
-            <div class="slide fade ">
-                <img src="img/slides/slider1s.jpg" alt="1">
+            <div id="time-bar" class="time-run"></div>
+            <div class="slide ">
+                <img class="fade" src="img/slides/slider1s.jpg" alt="1">
             </div>
-            <div class="slide fade ">
-                <img src="img/slides/slider2s2.jpg" alt="2">
+            <div class="slide">
+                <img class="fade" src="img/slides/slider2s2.jpg" alt="2">
             </div>
             <div onclick="pre()" class="pre">&#10094;</div>
             <div onclick="next()" class="next">&#10095;</div>
@@ -287,44 +357,44 @@
                                 </div>
                             </div>
                             <div class="other">
-                                    <div class="o2 md-12">
-                                            <h2>homemade soups</h2>
-                                            <div class="o-des"></div>
-                                            <div class="o-des">Served with your choice of rosemary focaccia, olive ciabatta or
-                                                garlic
-                                                baguette</div>
-                                            <div class="food-item">
-                                                <div class="item">
-                                                    <h6>potato and garlic soup with prawns</h6>
-                                                    <p>topped with fresh chives</p>
-                                                    <div class="f-right">5<sup>00</sup></div>
-                                                </div>
-                                                <div class="item">
-                                                    <h6>ROASTED BUTTERNUT SQUASH AND SHALLOT SOUP</h6>
-                                                    <p>with spicy fresh ginger</p>
-                                                    <div class="f-right">5<sup>00</sup></div>
-                                                </div>
-                                                <div class="item">
-                                                    <h6>TOMATO COCONUT SOUP</h6>
-                                                    <p>with fresh basil</p>
-                                                    <div class="f-right">5<sup>00</sup></div>
-                                                </div>
-                                                <div class="item">
-                                                    <h6>ZUCCHINI SOUP</h6>
-                                                    <p>topped with lots of fresh herbs</p>
-                                                    <div class="f-right">5<sup>00</sup></div>
-                                                </div>
-                                            </div>
+                                <div class="o2 md-12">
+                                    <h2>homemade soups</h2>
+                                    <div class="o-des"></div>
+                                    <div class="o-des">Served with your choice of rosemary focaccia, olive ciabatta or
+                                        garlic
+                                        baguette</div>
+                                    <div class="food-item">
+                                        <div class="item">
+                                            <h6>potato and garlic soup with prawns</h6>
+                                            <p>topped with fresh chives</p>
+                                            <div class="f-right">5<sup>00</sup></div>
                                         </div>
-                        </div>
-                        <div class="o2">
-                            <div class="feature2">
-                                <h2>spoon love</h2>
-                                <p>Spoon is all about sharing. Order for the table and share the
-                                    <strong>love</strong>
-                                    <i class="fas fa-heart"></i> !</p>
+                                        <div class="item">
+                                            <h6>ROASTED BUTTERNUT SQUASH AND SHALLOT SOUP</h6>
+                                            <p>with spicy fresh ginger</p>
+                                            <div class="f-right">5<sup>00</sup></div>
+                                        </div>
+                                        <div class="item">
+                                            <h6>TOMATO COCONUT SOUP</h6>
+                                            <p>with fresh basil</p>
+                                            <div class="f-right">5<sup>00</sup></div>
+                                        </div>
+                                        <div class="item">
+                                            <h6>ZUCCHINI SOUP</h6>
+                                            <p>topped with lots of fresh herbs</p>
+                                            <div class="f-right">5<sup>00</sup></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="o2">
+                                <div class="feature2">
+                                    <h2>spoon love</h2>
+                                    <p>Spoon is all about sharing. Order for the table and share the
+                                        <strong>love</strong>
+                                        <i class="fas fa-heart"></i> !</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="allday-tab" class="tabcontent">
@@ -439,7 +509,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="feature-food sm-12"  style="width: 30% ;margin-right:0;">
+                                    <div class="feature-food sm-12" style="width: 30% ;margin-right:0;">
                                         <h2>SIDES & SUCH</h2>
                                         <div class="food-item">
                                             <div class="item">
@@ -633,102 +703,102 @@
                             </div>
                         </div>
                     </div>
-                        <div class="o1">
-                            <h2>COFFEE</h2>
-                            <div class="food-item o-flex">
-                                <div class="item md-12">
-                                    <h6>MOCCHACINO</h6>
+                    <div class="o1">
+                        <h2>COFFEE</h2>
+                        <div class="food-item o-flex">
+                            <div class="item md-12">
+                                <h6>MOCCHACINO</h6>
 
-                                    <div class="f-right">4.20
-                                    </div>
-                                </div>
-                                <div class="item  md-12">
-                                    <h6>ESPRESSO</h6>
-
-                                    <div class="f-right">3.50</div>
-                                </div>
-                                <div class="item  md-12">
-                                    <h6>RISTRETTO</h6>
-
-                                    <div class="f-right">3.50
-                                    </div>
-                                </div>
-                                <div class="item  md-12">
-                                    <h6>MACCHIATO</h6>
-
-                                    <div class="f-right">3.90</div>
-                                </div>
-                                <div class="item md-12">
-                                    <h6>MOCHA LATTE</h6>
-                                    <p>Cold-brewed coffee, cashew milk, cocoa, coconut palm sugar, and a hint of salt
-                                    </p>
-                                    <div class="f-right">small 4.50 <br>large 6</div>
-                                </div>
-                                <div class="item md-12">
-                                    <h6>DIRTY CHAI</h6>
-                                    <p>Chai mixed with a double shot of
-                                        espresso, steamed milk, cinnamon</p>
-                                    <div class="f-right">small 4.75 <br>large 5.25</div>
-                                </div>
-                                <div class="item item-caution  md-12">
-                                    <p>Extras: <br>
-                                        extra shot of espresso 1 / soy, coconut, almond milk 0.9</p>
+                                <div class="f-right">4.20
                                 </div>
                             </div>
-                        </div>
-                        <div class="o2">
-                            <h2>MATCHA</h2>
-                            <div class="img-box"></div>
-                            <div class="food-item">
-                                <div class="item">
-                                    <h6>MATCHA HOT CHOCOLATE</h6>
-                                    <p>matcha latte with chocolate sauce</p>
-                                    <div class="f-right">5<sup>25</sup></div>
-                                </div>
-                                <div class="item">
-                                    <h6>MATCHA ICED TEA</h6>
+                            <div class="item  md-12">
+                                <h6>ESPRESSO</h6>
 
-                                    <div class="f-right">4<sup>25</sup></div>
-                                </div>
-                                <div class="item">
-                                    <h6>MATCHA LATTE</h6>
-                                    <p>matcha shot and steamed milk</p>
-                                    <div class="f-right">4<sup>25</sup></div>
+                                <div class="f-right">3.50</div>
+                            </div>
+                            <div class="item  md-12">
+                                <h6>RISTRETTO</h6>
+
+                                <div class="f-right">3.50
                                 </div>
                             </div>
-                        </div>
-                        <div class="o2">
-                            <h2>OTHER BEVERAGES
-                            </h2>
+                            <div class="item  md-12">
+                                <h6>MACCHIATO</h6>
 
-                            <div class="food-item">
-                                <div class="item">
-                                    <h6>CUCUMBER MINT WATER</h6>
-
-                                    <div class="f-right">1<sup>50</sup></div>
-                                </div>
-                                <div class="item">
-                                    <h6>GINGER SKINNY LEMONADE</h6>
-                                    <p>Water, lemon, agave nectar and fresh ginger</p>
-                                    <div class="f-right">2<sup>00</sup></div>
-                                </div>
-                                <div class="item">
-                                    <h6>HOT GREEN GUNPOWDER TEA</h6>
-                                    <p>with fresh basil</p>
-                                    <div class="f-right">free</sup></div>
-                                </div>
-                                <div class="item">
-                                    <h6>maroccan ice tea</h6>
-
-                                    <div class="f-right">2<sup>00</sup></div>
-                                </div>
-                                <div class="item">
-                                    <h6>spring water</h6>
-
-                                    <div class="f-right">750ml 4<sup>00</sup></div>
-                                </div>
+                                <div class="f-right">3.90</div>
+                            </div>
+                            <div class="item md-12">
+                                <h6>MOCHA LATTE</h6>
+                                <p>Cold-brewed coffee, cashew milk, cocoa, coconut palm sugar, and a hint of salt
+                                </p>
+                                <div class="f-right">small 4.50 <br>large 6</div>
+                            </div>
+                            <div class="item md-12">
+                                <h6>DIRTY CHAI</h6>
+                                <p>Chai mixed with a double shot of
+                                    espresso, steamed milk, cinnamon</p>
+                                <div class="f-right">small 4.75 <br>large 5.25</div>
+                            </div>
+                            <div class="item item-caution  md-12">
+                                <p>Extras: <br>
+                                    extra shot of espresso 1 / soy, coconut, almond milk 0.9</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="o2">
+                        <h2>MATCHA</h2>
+                        <div class="img-box"></div>
+                        <div class="food-item">
+                            <div class="item">
+                                <h6>MATCHA HOT CHOCOLATE</h6>
+                                <p>matcha latte with chocolate sauce</p>
+                                <div class="f-right">5<sup>25</sup></div>
+                            </div>
+                            <div class="item">
+                                <h6>MATCHA ICED TEA</h6>
+
+                                <div class="f-right">4<sup>25</sup></div>
+                            </div>
+                            <div class="item">
+                                <h6>MATCHA LATTE</h6>
+                                <p>matcha shot and steamed milk</p>
+                                <div class="f-right">4<sup>25</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o2">
+                        <h2>OTHER BEVERAGES
+                        </h2>
+
+                        <div class="food-item">
+                            <div class="item">
+                                <h6>CUCUMBER MINT WATER</h6>
+
+                                <div class="f-right">1<sup>50</sup></div>
+                            </div>
+                            <div class="item">
+                                <h6>GINGER SKINNY LEMONADE</h6>
+                                <p>Water, lemon, agave nectar and fresh ginger</p>
+                                <div class="f-right">2<sup>00</sup></div>
+                            </div>
+                            <div class="item">
+                                <h6>HOT GREEN GUNPOWDER TEA</h6>
+                                <p>with fresh basil</p>
+                                <div class="f-right">free</sup></div>
+                            </div>
+                            <div class="item">
+                                <h6>maroccan ice tea</h6>
+
+                                <div class="f-right">2<sup>00</sup></div>
+                            </div>
+                            <div class="item">
+                                <h6>spring water</h6>
+
+                                <div class="f-right">750ml 4<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -743,7 +813,6 @@
             <div class="blog-container">
                 <div class="blog-item fmd-6 sm-12">
                     <div class="img-box">
-                        <a href=""><img src="img/blog/scallops_s-630x400.jpg" alt="d1" width="630" height="400"></a>
                     </div>
                     <div class="blog-info">
                         <h2>
@@ -760,7 +829,6 @@
                 </div>
                 <div class="blog-item fmd-6 sm-12">
                     <div class="img-box">
-                        <a href=""><img src="img/blog/coconut-577x400.jpg" alt="d2"></a>
                     </div>
                     <div class="blog-info">
                         <h2>
@@ -776,9 +844,7 @@
                     </div>
                 </div>
                 <div class="blog-item fmd-6 sm-12">
-                    <div class="img-box">
-                        <a href=""><img src="img/blog/springrolls_s-1-630x400.jpg" alt="d3"></a>
-                    </div>
+                    <div class="img-box"></div>
                     <div class="blog-info">
                         <h2>
                             <a href="#">new: veggie spring rolls with almond ginger sauce</a>
@@ -808,32 +874,32 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-item fmd-6 sm-12">
-                    
-                        <div class="cover">
-                            <h2 class="gallery-title">The Food</h2>
-                            <a href="" ><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
-                        </div>
-                        <a href=""><img src="img/gallery/spinach-450x450.jpg" alt="g1"></a>
+
+                    <div class="cover">
+                        <h2 class="gallery-title">The Food</h2>
+                        <a href=""><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
+                    </div>
+                    <a href=""><img src="img/gallery/spinach-450x450.jpg" alt="g1"></a>
                 </div>
                 <div class="gallery-item fmd-6 sm-12">
-                        <div class="cover">
-                                <h2 class="gallery-title">The restaurant</h2>
-                                <a href="" ><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
-                        </div>
+                    <div class="cover">
+                        <h2 class="gallery-title">The restaurant</h2>
+                        <a href=""><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
+                    </div>
                     <a href=""><img src="img/gallery/table_s.jpg" alt="g2"></a>
                 </div>
                 <div class="gallery-item fmd-6 sm-12">
-                        <div class="cover">
-                                <h2 class="gallery-title">spoon people</h2>
-                                <a href="" ><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
-                        </div>
+                    <div class="cover">
+                        <h2 class="gallery-title">spoon people</h2>
+                        <a href=""><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
+                    </div>
                     <a href=""><img src="img/gallery/zara-450x450.jpg" alt="g3"></a>
                 </div>
                 <div class="gallery-item fmd-6 sm-12">
-                        <div class="cover">
-                                <h2 class="gallery-title">coffe and matcha</h2>
-                                <a href="" ><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
-                        </div>
+                    <div class="cover">
+                        <h2 class="gallery-title">coffe and matcha</h2>
+                        <a href=""><span> <i class="fas fa-long-arrow-alt-right"></i></span></a>
+                    </div>
                     <a href=""><img src="img/gallery/yiga_s-450x450.jpg" alt="g4"></a>
                 </div>
             </div>
@@ -1041,13 +1107,13 @@
                 </div>
                 <div class="hours-item">
                     <div class="hours-left">
-                            <div class="hours-d">sun</div>
+                        <div class="hours-d">sun</div>
                     </div>
                     <div class="hours-right">8am - 10pm</div>
                 </div>
                 <div class="hours-item">
                     <div class="hours-left">
-                            <div class="hours-d">mon</div>
+                        <div class="hours-d">mon</div>
                     </div>
                     <div class="hours-right">closed.</div>
                 </div>
@@ -1074,12 +1140,13 @@
                     <div class="contact-img"></div>
                 </div>
                 <div class="contact-item fmd-6 sm-12">
-                    <form action="">
-                        <input type="text" placeholder="NAME*">
-                        <input type="email" placeholder="EMAIL*">
+                    <form name="contactform" action="pages/shop.html" onsubmit="return validDateForm()">
+                        <input name="name" type="text" placeholder="NAME*" required>
+                        <input name="email" type="email" placeholder="EMAIL*" required>
 
-                        <textarea name="" id="" cols="40" rows="10" placeholder="WRITING..."></textarea>
+                        <textarea name="text" id="" cols="40" rows="10" placeholder="WRITING..."></textarea>
                         <input type="submit" value="SEND">
+                        <div class="noti">One or more fields have an error. Please check and try again.</div>
                     </form>
                 </div>
 
@@ -1090,20 +1157,21 @@
     </section>
     <footer id="footer">
         <div class="ft-social">
-                <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-tripadvisor"></i></a></li>
-                        <li><a href="#"><i class="fab fa-yelp"></i></a></li>
-            
-                    </ul>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-tripadvisor"></i></a></li>
+                <li><a href="#"><i class="fab fa-yelp"></i></a></li>
+
+            </ul>
         </div>
         <div class="ft-copy">&copy; 2019 Đinh Lộc Phúc. ALL RIGHTS RESERVED.</div>
-        
+
     </footer>
     <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="js/minitool.js"></script>
     <script type="text/javascript" src="js/slide-show.js"></script>
     <script type="text/javascript" src="js/menu-tabs.js"></script>
 </body>
