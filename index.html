@@ -197,7 +197,9 @@
             <a href="#top"><i class="fas fa-arrow-up"></i></a>
         </div>
         <div class="sildeshow">
-            <div id="time-bar" class="time-run"></div>
+            <div id="progress">
+                <div id="time-bar"></div>
+            </div>
             <div class="slide ">
                 <img class="fade" src="img/slides/slider1s.jpg" alt="1">
             </div>
@@ -207,7 +209,7 @@
             <div onclick="pre()" class="pre">&#10094;</div>
             <div onclick="next()" class="next">&#10095;</div>
             <div class="dots-box">
-                <span class="dots active" onclick="jumpSlide(0)"></span>
+                <span class="dots active" onclick="jumpSlide(0)"  ></span>
                 <span class="dots" onclick="jumpSlide(1)"></span>
             </div>
         </div>
@@ -286,7 +288,18 @@
                         <div id="starters">
                             <div class="feature-food gmd-6">
                                 <h2>bread & antipasti</h2>
-                                <img src="img/menu/breadsticks_s.jpg" alt="bread">
+                                <div class="overlay-on"><img src="img/menu/breadsticks_s.jpg" alt="bread"></div>
+                                <div class="overlay" >
+                                    <div class="overlay-box">
+                                        <div class="overlay-img">
+                                            <div class="overlay-zoom"><span><i class="fas fa-expand"></i></span></div>
+                                        </div>
+                                        <div class="overlay-text">
+                                            <p>BREAD & ANTIPASTI</p>
+                                            <span class="overlay-close"><i class="fas fa-times"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="food-item">
                                     <div class="item">
                                         <h6>resemary breadsticks</h6>

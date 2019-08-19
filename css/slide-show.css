@@ -11,20 +11,15 @@
      #time-bar
     {
         background-color: rgb(255, 255, 255,0.3);
-        width: 100%;
-        max-width:100%; 
+        width: 1%;
         height: 10px;
+    } 
+    #progress
+    {
+        width: 100%;
         position: absolute;
         top: 0;
         z-index: 998;
-    } 
-    .time-run
-    {
-        animation: time-run 10s;
-    }
-    .time-back
-    {
-        animation: time-back 0s;
     }
     .pre,.next
     {

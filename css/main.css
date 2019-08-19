@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6
 img
 {
     width: 100%;
-    height: auto !important;
+    height: 100%;
     position: relative;
 }
 a
@@ -61,7 +61,7 @@ input:focus,textarea:focus,button[type="reset"]
 {
     list-style-type: none;
 }
-.top a
+.top a,.overlay-img span:hover
 {
     color: #ffffff;
 }
@@ -87,7 +87,7 @@ input:focus,textarea:focus,button[type="reset"]
 {
     font-size: 16px;
 }
-.nav2 li:hover>span i,.nav2 li:hover>a,.top a:hover,.post-day a:hover,.blog-info h2:hover>a,.menu-active
+.nav2 li:hover>span i,.nav2 li:hover>a,.top a:hover,.post-day a:hover,.blog-info h2:hover>a,.menu-active,.overlay-text span:hover
 {
     color:#ff4229 !important;
 }

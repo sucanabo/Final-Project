@@ -2,9 +2,9 @@
 window.onscroll = function () { scrollPage() };
 function active(a, b) {
     if (b == 1)
-        a.className +=" menu-active";
+        a.className += " menu-active";
     if (b == 0)
-        a.className="";
+        a.className = "";
 }
 function scrollPage() {
     var screen = document.documentElement.scrollTop;
@@ -18,33 +18,33 @@ function scrollPage() {
     var team = document.getElementById("t-team");
     var contact = document.getElementById("t-contact");
 
-     console.log(screen);
+    //console.log(screen);
 
-    if (sElement > 950||sBody > 950)
+    if (sElement > 950 || sBody > 950)
         backTop.style.display = "block";
     else
         backTop.style.display = "none";
 
-    if (sElement > 0 && sElement < 1700||sBody > 0 && sBody < 1700)
+    if (sElement > 0 && sElement < 1700 || sBody > 0 && sBody < 1700)
         active(home, 1);
     else active(home, 0);
 
-    if (sElement > 1700 && sElement < 5700||sBody > 1700 && sBody < 5700)
+    if (sElement > 1700 && sElement < 5700 || sBody > 1700 && sBody < 5700)
         active(menu, 1);
     else active(menu, 0);
 
-    if (sElement > 5700 && sElement < 7700||sBody > 5700 && sBody < 7700)
+    if (sElement > 5700 && sElement < 7700 || sBody > 5700 && sBody < 7700)
         active(blog, 1);
     else active(blog, 0);
 
-    if (sElement > 7700 && sElement < 8900||sBody> 7700 && sBody < 8900)
+    if (sElement > 7700 && sElement < 8900 || sBody > 7700 && sBody < 8900)
         active(events, 1);
     else active(events, 0);
 
-    if (sElement > 8900 && sElement < 10400||sBody > 8900 && sBody < 10400)
+    if (sElement > 8900 && sElement < 10400 || sBody > 8900 && sBody < 10400)
         active(team, 1);
     else active(team, 0);
-    if (sElement > 10400||sBody > 10400)
+    if (sElement > 10400 || sBody > 10400)
         active(contact, 1);
     else active(contact, 0);
 }
@@ -63,14 +63,56 @@ function search() {
     ul = document.getElementById("m-ul");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
     }
-  }
+}
+//Over Play
+//   function overlay_on()
+//   {
+//       var elm=this.
+//     document.getElementsByClassName("overlay").style.display = "block";
+//   }
+//   function overlay_off()
+//   {
+//     document.getElementsByClassName("overlay").style.display = "none";
+//   }
+var ovon = document.getElementsByClassName("overlay-on");
+var i;
+
+for (i = 0; i < ovon.length; i++) {
+    ovon[i].addEventListener("click", function () {
+        var overlay = this.nextElementSibling;
+        overlay.style.display = "block";
+        overlay.addEventListener("click", function () {
+            overlay.style.display = "none";
+        });
+    });
+}
+//zoom
+// var oimg = document.getElementsByClassName("overlay-img")
+
+// for (i = 0; i < oimg.length; i++) {
+//     var p = this.parentNode;
+//     var c = this.childNodes;
+//     c[0].addEventListener("click",function()
+//     {
+//         if(p.style.height=="67%"&&p.style.width=="33%")
+//         {
+//             p.style.height="89%";
+//             p.style.width="53%";
+//         }
+//         else
+//         {
+//             p.style.height="67%";
+//             p.style.width="33%";
+//         }
+//     })
+// }
 
 // function showitem() {
 //     var acc = document.getElementsByClassName("m-item");
@@ -114,4 +156,3 @@ function search() {
 //     else {
 //         return true;
 //     }
-// }
