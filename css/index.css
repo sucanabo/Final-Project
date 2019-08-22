@@ -603,6 +603,10 @@ sup
 {
     background-color: rgb(170, 170, 170);
 }
+#gallery img
+{
+    height: 100%;
+}
 .gallery-item,.team-item
 {
     width: 25%;
