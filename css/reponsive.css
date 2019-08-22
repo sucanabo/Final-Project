@@ -103,4 +103,11 @@
     {
     height: 50vh !important;
     }
+    #team
+    {
+        display: none;
+    }
+    #team-2{
+        display: block;
+    }
 }
