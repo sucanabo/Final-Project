@@ -17,7 +17,7 @@ function setup(index, tmp) {
     slide[tmp].style.display = "none";
     dot[index].className += " active";
     dot[tmp].className = dot[tmp].className.replace(" active", "");
-    // bar.className.replace("time-run");
+    var elem = document.getElementById("time-bar");
 }
 function next() {
     var tmp = index;
@@ -26,7 +26,9 @@ function next() {
         index = 0;
     setup(index, tmp);
     move();
+
 }
+
 function pre() {
     var tmp = index;
     index--;
@@ -47,14 +49,27 @@ function jumpSlide(n) {
     }
     move();
 }
+function fa(a)
+{
+  if(a.addEventListener("click",function(){return 1})==1)
+    return 1;
+  else 
+    return 0;
+}
 function move() {
     var elem = document.getElementById("time-bar");   
     var width = 1;
     var id = setInterval(frame, 100);
+    var next=document.getElementsByClassName("next");
     function frame() {
       if (width >= 100) {
         clearInterval(id);
-      } else {
+      }
+      // else if(fa(next)==1)
+      // {
+      //   width.style.width="100%";
+      // }
+      else {
         width++; 
         elem.style.width = width + '%'; 
       }
